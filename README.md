@@ -46,15 +46,15 @@ export default function App() {
   const [countB, setCountB] = React.useState(0);
 
   useEffectX(
-    ({ changedItem }) => {
+    ({ changedItem: [changeObjcountA, changeObjcountB] }) => {
       // Here you have complete access to what changed
-      console.log('changed Item', changedItem);
+      console.log('changed Item', changeObjcountA, changeObjcountB);
       // your logic if you want to check for count
-      console.log(
-        `count ${changedItem[0]?.changed ? 'changed' : 'not changed'} from ${
-          changedItem[0]?.previous
-        } to ${changedItem[0]?.next}`
-      );
+      // console.log(
+      //   `count ${changedItem[0]?.changed ? 'changed' : 'not changed'} from ${
+      //     changedItem[0]?.previous
+      //   } to ${changedItem[0]?.next}`
+      // );
     },
     [countA, countB]
   );
