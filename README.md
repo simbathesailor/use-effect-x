@@ -14,7 +14,9 @@ In functional components we typically make use of usePrevious custom hooks. That
 
 What if we have the access of previous and new values in useEffect callback also, so that we dont have to do that extra work of writing usePrevious hooks.
 
-> So there you have a special useEffect alternative which provides extra info about the dependencies , tells you what changed, previous values, current values and first run for the starters
+---
+
+So there you gom, I try to solve the problem using useEffect alternative which provides extra info about the dependencies , tells you what changed, previous values, current values and first run for the starters
 
 ## Install
 
