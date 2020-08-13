@@ -1,10 +1,10 @@
 # use-effect-x
 
-<h2  align="center">An alternative to useEffect which provide extra info to work with updates and react on what changed</h2>
+<h2  align="center">An alternative to useEffect which provide extra info to work with updates</h2>
 
 ---
 
-Why it is needed ?
+### Why it is needed ?
 
 Most of the times we need to respond to updates in our components, where we need to compare previous values and current values. Remember we had the same thing with componentDidUpdate in class based components earlier. useEffect today are not capable to do so out of the box. you need to put in extra effort to get the previous and current values.
 
@@ -16,7 +16,7 @@ What if we have the access of previous and new values in useEffect callback also
 
 ---
 
-So there you gom, I try to solve the problem using useEffect alternative which provides extra info about the dependencies , tells you what changed, previous values, current values and first run for the starters
+So there you go, I try to solve the problem using useEffect alternative which provides extra info about the dependencies , tells you what changed, previous values, current values and first run for the starters
 
 ## Install
 
