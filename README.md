@@ -4,6 +4,18 @@
 
 ---
 
+Why it is needed ?
+
+Most of the times we need to respond to updates in our components, where we need to compare previous values and current values. Remember we had the same thing with componentDidUpdate in class based components earlier. useEffect today are not capable to do so out of the box. you need to put in extra effort to get the previous and current values.
+
+We will focus on the function components now, as they are the most prominent way of developing components today.
+
+In functional components we typically make use of usePrevious custom hooks. That definetly works. But, you need to do extra work of adding usePrevious hooks for individual items in useEffect dependency.
+
+What if we have the access of previous and new values in useEffect callback also, so that we dont have to do that extra work of writing usePrevious hooks.
+
+> So there you have a special useEffect alternative which provides extra info about the dependencies , tells you what changed, previous values, current values and first run for the starters
+
 ## Install
 
 If you use yarn. Run
