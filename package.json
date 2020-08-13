@@ -45,5 +45,6 @@
     "tsdx": "^0.13.2",
     "tslib": "^2.0.1",
     "typescript": "^3.9.7"
-  }
+  },
+  "homepage": "https://github.com/simbathesailor/use-effect-x"
 }
