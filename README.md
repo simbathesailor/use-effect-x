@@ -48,6 +48,15 @@ export default function App() {
   useEffectX(
     ({ changedItem: [changeObjcountA, changeObjcountB] }) => {
       // Here you have complete access to what changed
+
+      //changeObjcountA contains
+      // {
+      // previous // previous value
+      // next, // current value
+      // changed: // has changed
+      // isFirstRun: // is running for the first time
+      // }
+
       console.log('changed Item', changeObjcountA, changeObjcountB);
       // your logic if you want to check for count
       // console.log(
