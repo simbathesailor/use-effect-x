@@ -27,8 +27,13 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
+  "keywords": [
+    "react",
+    "react-hooks",
+    "useEffect"
+  ],
   "name": "use-effect-x",
-  "author": "simbathesailor",
+  "author": "simbathesailor <anilchaudhary453@gmail.com>",
   "module": "dist/use-effect-x.esm.js",
   "devDependencies": {
     "@types/jest": "^26.0.9",
