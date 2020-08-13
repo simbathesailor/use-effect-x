@@ -42,6 +42,7 @@ export function useEffectX(callback: any, dependency: any[] | undefined) {
             previous: undefined,
             next: elem,
             changed: true,
+            isFirstRun: true,
           };
         });
       }
