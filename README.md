@@ -58,7 +58,8 @@ export default function App() {
       // }
 
       console.log('changed Item', changeObjcountA, changeObjcountB);
-      // your logic if you want to check for count
+
+      // As changedItem is an array, you can access via in
       // console.log(
       //   `count ${changedItem[0]?.changed ? 'changed' : 'not changed'} from ${
       //     changedItem[0]?.previous

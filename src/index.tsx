@@ -16,12 +16,6 @@ export function useEffectX(callback: any, dependency: any[] | undefined) {
     if (dependency) {
       if (dependencyRef.current) {
         changedDependencyRef.current = dependency.map((elem, index) => {
-          // console.log(
-          //   "dependencyRef.current",
-          //   dependencyRef.current?.[index],
-          //   elem
-          // );
-
           if (dependencyRef.current?.[index] === elem) {
             return {
               previous: elem,
