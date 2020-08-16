@@ -1,9 +1,22 @@
 import * as React from 'react';
 
-// interface IUseEffect {}
+interface IChangedItemObj {
+  previous: any;
+  next: any;
+  changed: boolean;
+  isFirstRun?: boolean;
+}
+interface IUseEffectCallback {
+  changedItem: IChangedItemObj[] | null;
+}
+
+type TUseEffectCallback = (changeditemInObj: IUseEffectCallback) => any;
 
 // Delete me
-export function useEffectX(callback: any, dependency: any[] | undefined) {
+export function useEffectX(
+  callback: TUseEffectCallback,
+  dependency: any[] | undefined
+) {
   const dependencyRef = React.useRef<null | any[] | undefined>(null);
 
   const changedDependencyRef = React.useRef<null | any[]>(null);
