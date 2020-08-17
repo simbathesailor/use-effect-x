@@ -91,3 +91,11 @@ export default function App() {
   );
 }
 ```
+
+## When not needed the arguments, you can use it exactly same as useEffect
+
+```jsx
+useEffectX(() => {}, [countA, countB]);
+
+useEffectX(() => {});
+```
